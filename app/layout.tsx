@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { HarnexChatWidget } from "@/components/ai/HarnexChatWidget";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="es" className="dark">
       <body className="min-h-screen bg-[#090a0f] text-slate-100 selection:bg-cyan-500/20 selection:text-cyan-200">
         {children}
+        <HarnexChatWidget />
       </body>
     </html>
   );
